@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Release" />
+	<File name="main.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2895" topLine="33" />
+		</Cursor>
+		<Folding>
+			<Collapse line="12" />
+			<Collapse line="29" />
+			<Collapse line="57" />
+			<Collapse line="68" />
+			<Collapse line="85" />
+			<Collapse line="113" />
+			<Collapse line="122" />
+			<Collapse line="124" />
+			<Collapse line="126" />
+			<Collapse line="131" />
+			<Collapse line="136" />
+			<Collapse line="141" />
+			<Collapse line="158" />
+			<Collapse line="175" />
+			<Collapse line="192" />
+			<Collapse line="229" />
+			<Collapse line="236" />
+			<Collapse line="244" />
+			<Collapse line="248" />
+			<Collapse line="258" />
+			<Collapse line="276" />
+			<Collapse line="282" />
+			<Collapse line="292" />
+			<Collapse line="299" />
+			<Collapse line="310" />
+			<Collapse line="317" />
+			<Collapse line="335" />
+			<Collapse line="342" />
+			<Collapse line="353" />
+			<Collapse line="372" />
+			<Collapse line="388" />
+		</Folding>
+	</File>
+	<File name="main.rc" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2434" topLine="54" />
+		</Cursor>
+	</File>
+	<File name="resource.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="637" topLine="11" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
