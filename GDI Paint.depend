@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1502644836 source:h:\all c++ files\gdi paint\main.cpp
+	<windows.h>
+	"resource.h"
+	<windows.h>
+	<algorithm>
+	"resource.h"
+
+1502598005 source:h:\all c++ files\gdi paint\bugtests.cpp
+	<windows.h>
+
+1502598635 h:\all c++ files\gdi paint\kv_windows.h
+	<windows.h>
+	<iostream>
+
+1502644941 source:h:\all c++ files\gdi paint\main.rc
+	"resource.h"
+
+1502644361 h:\all c++ files\gdi paint\resource.h
+
+1502982035 source:h:\all c++ files\incomplete\graphical projects\gdi paint\main.cpp
+	<windows.h>
+	<algorithm>
+	<cstring>
+	<cstdio>
+	"resource.h"
+
+1502981710 h:\all c++ files\incomplete\graphical projects\gdi paint\resource.h
+
+1502981915 source:h:\all c++ files\incomplete\graphical projects\gdi paint\main.rc
+	"resource.h"
+	<windows.h>
+

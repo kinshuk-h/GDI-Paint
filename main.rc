@@ -1,0 +1,74 @@
+#include "resource.h"
+#include <windows.h>
+IDI_MYICON ICON "Paint_begin.ico"
+IDC_PEN CURSOR "PEN.cur"
+IDC_ERASER CURSOR "ERASER.cur"
+IDR_ACCEL1 ACCELERATORS
+BEGIN
+    "F",   ID_FCOLOR, CONTROL, VIRTKEY
+    "B",   ID_BCOLOR, CONTROL, VIRTKEY
+    "I",   ID_ERASER_PLUS , CONTROL, VIRTKEY
+    "D",   ID_ERASER_MINUS, VIRTKEY, CONTROL
+    "+",   ID_PEN_PLUS, ASCII
+    "-",   ID_PEN_MINUS, ASCII
+END
+IDR_MAIN_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_FILE_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...\tF1",               IDM_HELP_ABOUT
+    END
+    POPUP "&Shape"
+    BEGIN
+        MENUITEM "&Ellipse",                    IDM_ELLIPSE
+        MENUITEM "&Rectangle",                  IDM_RECT
+    END
+END
+IDR_POPUP MENU
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Line",                       IDM_LINE
+        MENUITEM "&Freehand",                   IDM_FREEHAND
+        MENUITEM SEPARATOR
+        MENUITEM "&Ellipse",                      IDM_ELLIPSE
+        MENUITEM "&Rectangle"  ,                  IDM_RECT
+    END
+END
+DLG_FCOL DIALOGEX 0, 0, 160, 100
+STYLE DS_3DLOOK | DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP | WS_SYSMENU
+CAPTION "Foreground Color"
+FONT 8, "Ms Shell Dlg"
+{
+    CTEXT "Enter Some RGB Values : " , IDC_STATIC, 0,10,160,12
+    LTEXT "R: ",IDC_STATIC,25,30,8,12
+    LTEXT "G: ",IDC_STATIC,25,50,8,12
+    LTEXT "B: ",IDC_STATIC,25,70,8,12
+    EDITTEXT ID_R,35,30,40,12,ES_CENTER
+    EDITTEXT ID_G,35,50,40,12,ES_CENTER
+    EDITTEXT ID_B,35,70,40,12,ES_CENTER
+    PUSHBUTTON "Show",ID_SET          ,90,50,50,12
+    PUSHBUTTON "Set" ,ID_SET_APPLY    ,90,70,50,12
+    EDITTEXT IDM_FCOLOR,90,30,50,12,ES_CENTER
+}
+
+DLG_BCOL DIALOGEX 0,0,160,100
+STYLE DS_3DLOOK | DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP | WS_SYSMENU
+CAPTION "Background Color"
+FONT 8, "Ms Shell Dlg"
+{
+    CTEXT "Enter Some RGB Values : " , IDC_STATIC, 0,10,160,12
+    LTEXT "R: ",IDC_STATIC,25,30,8,12
+    LTEXT "G: ",IDC_STATIC,25,50,8,12
+    LTEXT "B: ",IDC_STATIC,25,70,8,12
+    EDITTEXT ID_R,35,30,40,12,ES_CENTER
+    EDITTEXT ID_G,35,50,40,12,ES_CENTER
+    EDITTEXT ID_B,35,70,40,12,ES_CENTER
+    PUSHBUTTON "Set",ID_SET                  ,90,50,50,12
+    PUSHBUTTON "Apply"  ,ID_SET_APPLY  ,90,70,50,12
+    EDITTEXT IDM_BCOLOR,90,30,50,12,ES_CENTER
+}
